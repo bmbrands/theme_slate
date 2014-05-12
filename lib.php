@@ -40,6 +40,35 @@ function theme_slate_process_css($css, $theme) {
 }
 
 
+<<<<<<< HEAD
+=======
+/**
+ * Parses CSS before it is cached.
+ *
+ * This function can make alterations and replace patterns within the CSS.
+ *
+ * @param string $css The CSS
+ * @param theme_config $theme The theme config object.
+ * @return string The parsed CSS The parsed CSS.
+ */
+function theme_slate_logo($theme) {
+
+    // Set the background image for the logo.
+    $logo = $theme->setting_file_url('logo', 'logo');
+    $css = theme_slate_set_logo($css, $logo);
+
+    // Set custom CSS.
+    if (!empty($theme->settings->customcss)) {
+        $customcss = $theme->settings->customcss;
+    } else {
+        $customcss = null;
+    }
+    $css = theme_slate_set_customcss($css, $customcss);
+
+    return $css;
+}
+
+>>>>>>> 2e3f25cd59b9ff9ba96debc2ba6fde5b4632f033
 function theme_slate_set_logo($css, $logo) {
     $logotag = '[[setting:logo]]';
     $logoheight = '[[logoheight]]';
@@ -65,6 +94,20 @@ function theme_slate_set_logo($css, $logo) {
     return $css;
 }
 
+<<<<<<< HEAD
+=======
+function old_theme_slate_set_logo($css, $logo) {
+    $logotag = '[[setting:logo]]';
+    $replacement = $logo;
+    if (is_null($replacement)) {
+        $replacement = '';
+    }
+    $css = str_replace($tag, $replacement, $css);
+
+    return $css;
+}
+
+>>>>>>> 2e3f25cd59b9ff9ba96debc2ba6fde5b4632f033
 /**
  * Serves any files associated with the theme settings.
  *

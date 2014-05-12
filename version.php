@@ -31,4 +31,5 @@ $plugin->maturity  = MATURITY_BETA;
 $plugin->component = 'theme_slate';
 $plugin->dependencies = array(
     'theme_bootstrap'  => 2014051200
+
 );
