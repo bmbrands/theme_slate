@@ -9,7 +9,7 @@
 // Moodle is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for slate details.
+// GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
@@ -24,12 +24,12 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2014051200;
+$plugin->version   = 2014051302;
 $plugin->requires  = 2014051200;
-$plugin->release  = 2014051200;
+$plugin->release  = 2014051302;
 $plugin->maturity  = MATURITY_BETA;
 $plugin->component = 'theme_slate';
 $plugin->dependencies = array(
-    'theme_bootstrap'  => 2014051200
+    'theme_bootstrap'  => 2014051300
 
 );

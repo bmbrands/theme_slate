@@ -1,9 +1,7 @@
 About this theme
 ================
 
-![image1](pix/screenshot.png "Moodle Bootstrap Screenshot")
-
-This is Bootswatch slate on the Bootstrap 3 theme for Moodle.
+This is Bootswatch slate for the Bootstrap 3 theme for Moodle.
 
 * package   slate bootswatch for Bootstrap 3
 * copyright 2014 Bas Brands. www.sonsbeekmedia.nl
